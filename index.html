@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2daf30ad84.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+        } // End if
+    });
+    });
+    </script>
+</head>
+<body> 
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <h1 class="logo">FW</h1>
+                <input type="checkbox" name="" id="">
+                
+                <div class="hm-menu">
+                    <div class="hm-lines hm-line1"></div>
+                    <div class="hm-lines hm-line2"></div>
+                    <div class="hm-lines hm-line3"></div>
+                </div>
+                <div class="menu-ls-wrapper">   
+                    <ul class="menu-ls">
+                        <li class="ls-items ls-item1"><a href="#">Home</a></li>
+                        <li class="ls-items ls-item2"><a href="#about">About Us</a></li>
+                        <li class="ls-items ls-item3"><a href="#category">Category</a></li>
+                        <li class="ls-items ls-item4"><a href="#food-menu">Menu</a></li>
+                        <li class="ls-items ls-item5"><a href="#testimonial">Testimonial</a></li>
+                        <li class="ls-items ls-item6"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>   
+
+    <section class="header-content-wrapper">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="text-green">Eat Right Food</h1>
+                <p>Eat Right Food, It is good for your Health</p>
+                <a href="#food-menu" class="btn btn-primary">menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="content">
+                    <h3>About Us</h3>
+                    <h2>We've been Making Healthy Food for Last 10 Year</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse reiciendis eius molestiae corporis minus, iure sit assumenda repellendus possimus consequatur quia, provident exercitationem, facilis commodi vitae adipisci ullam! Excepturi.</p>
+                </div>
+                <img src="./img/about-us-img.jpg" alt="food-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="category">
+        <div class="container">
+            <h2>Types of Food</h2>
+            <div class="img-wrapper">
+                <img src="./img/food-type1.jpg" alt="food-type1">
+                <img src="./img/food-type2.jpg" alt="food-type2">
+                <img src="./img/food-type3.jpg" alt="food-type3">
+            </div>
+        </div>
+    </section>
+
+    <section id="food-menu">
+        <div class="container">
+            <h2>Food Menu</h2>
+            <div class="food-menu-wrapper">
+                <div class="food-menu-item menu-item1">
+                    <img src="./img/dish1.jpg" alt="dish1">
+
+                    <div class="food-menu-content">
+                        <h4>Food Item 1</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, sequi.</p>
+                        <h3 class="food-price">Price: &#8377;250</h3>
+                    </div>
+
+                </div>
+
+                <div class="food-menu-item menu-item2">
+                    <img src="./img/dish2.jpg" alt="dish1">
+
+                    <div class="food-menu-content">
+                        <h4>Food Item 2</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, sequi.</p>
+                        <h3 class="food-price">Price: &#8377;250</h3>
+                    </div>
+                </div>
+                <div class="food-menu-item menu-item3">
+                    <img src="./img/dish3.jpg" alt="dish1">
+
+                    <div class="food-menu-content">
+                        <h4>Food Item 3</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, sequi.</p>
+                        <h3 class="food-price">Price: &#8377;250</h3>
+                    </div>
+                </div>
+                <div class="food-menu-item menu-item4">
+                    <img src="./img/dish5.jpg" alt="dish5">
+
+                    <div class="food-menu-content">
+                        <h4>Food Item 4</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, sequi.</p>
+                        <h3 class="food-price">Price: &#8377;250</h3>
+                    </div>
+                </div>
+                <div class="food-menu-item menu-item5">
+                    <img src="./img/dish7.jpg" alt="dish7">
+
+                    <div class="food-menu-content">
+                        <h4>Food Item 5</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, sequi.<p>
+                        <h3 class="food-price">Price: &#8377;250</h3>
+                    </div>
+                </div>
+                <div class="food-menu-item menu-item6">
+                    <img src="./img/dish2.jpg" alt="dish8">
+
+                    <div class="food-menu-content">
+                        <h4>Food Item 6</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, sequi.</p>
+                        <h3 class="food-price">Price: &#8377;250</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonial">
+        <div class="container">
+            <h2>What Our Customer Say</h2>
+
+            <div class="testimonial-wrapper">
+                <div class="testimonial-item testimonial-item1">
+                    <i>&#10031;&#10031;&#10031;&#10031;&#10031;</i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi itaque? Ut sed ea consequuntur.</p>
+                    <img src="./img/person1.jpg" alt="">
+                    <p>Person 1</p>
+                </div>
+
+                <div class="testimonial-item testimonial-item2">
+                    <i>&#10031;&#10031;&#10031;&#10031;&#10031;</i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi itaque? Ut sed ea consequuntur.</p>
+                    <img src="./img/person2.jpg" alt="">
+                    <p>Person 2</p>
+                </div>
+
+                <div class="testimonial-item testimonial-item3">
+                    <i>&#10031;&#10031;&#10031;&#10031;&#10031;</i>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nisi itaque? Ut sed ea consequuntur.</p>
+                    <img src="./img/person3.jpg" alt="">
+                    <p>Person 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <img src="./img/xx.jpg" alt="contact-image">
+                
+                <form action="" method="post">
+                    <input type="text" name="name" id="" placeholder="Name" autocomplete="off">
+                    <input type="email" name="email" id="" placeholder="Email" autocomplete="off">
+                    <textarea name="message" id="" rows="14" cols="30" placeholder="Your message"></textarea>
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <p>Copyright &copy; 2023 , All right reserved</p>
+    </footer>
+</body>
+</html>
