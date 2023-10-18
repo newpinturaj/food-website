@@ -357,6 +357,7 @@ input[type="checkbox"],
     border-top: none;
     border-left: none;
     border-right: none;
+    outline-color: green;
    
 }
 
@@ -369,6 +370,10 @@ input[type="checkbox"],
     border-left: none;
     border-right: none;
     margin-bottom: 1em;
+    resize: none;
+    outline-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .contact-wrapper form input[type='submit'] {
